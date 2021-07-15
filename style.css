@@ -1,0 +1,513 @@
+/*---------------------- google font ----------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
+
+/*---------------------- Common css ----------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+img {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*---------------------- Header css ----------------------*/
+.header-area {
+  width: 100%;
+  background-color: #2d25a0;
+}
+.top-header {
+  width: 100%;
+  padding: 20px 0;
+}
+.menubar {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#toogle-menu {
+  display: none;
+}
+.checkbtn {
+  font-size: 35px;
+  cursor: pointer;
+  color: #dddddd;
+  display: none;
+}
+.menubar nav ul {
+  display: flex;
+}
+.menubar nav ul li a {
+  color: #fff;
+  display: block;
+  padding-right: 20px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.menubar nav ul li a:hover {
+  color: #e02c6d;
+}
+.login-btn {
+  text-align: center;
+  margin-right: 0;
+}
+.login-btn a {
+  color: #fff;
+  padding: 15px 40px;
+  background-color: #e02c6d;
+}
+.login-btn a i {
+  margin-right: 10px;
+}
+
+.bottom-header {
+  width: 100%;
+  padding: 50px 0;
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.left-side {
+  padding: 100px 0;
+  overflow: hidden;
+}
+.left-side h2 {
+  color: #dddddd;
+  margin-bottom: 50px;
+  font-size: 3em;
+}
+.left-side a {
+  color: #fff;
+  padding: 15px 40px;
+  background-color: #e02c6d;
+  transition: 0.5s;
+  position: relative;
+}
+.left-side a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow;
+  opacity: 0.5;
+  top: 0%;
+  right: 100%;
+  position: absolute;
+  transition: 0.5s;
+}
+.left-side a:hover::before {
+  right: 0;
+}
+
+.left-side a i {
+  margin-left: 10px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.header-area .right-side img {
+  max-width: 100%;
+  height: 100%;
+  transition: 4s;
+}
+.header-area .right-side img:hover {
+  transform: scale(1.1);
+}
+
+/*---------------------- Football Team area css ----------------------*/
+.team-area {
+  width: 100%;
+  background-color: #ddd;
+  padding: 70px 0;
+}
+.team-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.singel-footbaler {
+  max-width: 500px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 2px rgba(133, 133, 133, 0.075);
+}
+.singel-footbaler .detailes h2 {
+  padding: 15px 0;
+  font-size: 2rem;
+}
+.singel-footbaler .detailes p {
+  color: rgb(124, 124, 124);
+  line-height: 25px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/*---------------------- Highlight css ----------------------*/
+
+.highlight-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 100px 0;
+}
+
+.highlight-left {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+.highlight-text h2 {
+  font-size: 3rem;
+}
+.highlight-text p {
+  line-height: 25px;
+  color: rgb(148, 148, 148);
+  margin-bottom: 25px;
+  padding: 15px 0;
+}
+.highlight-text a {
+  color: #fff;
+  padding: 15px 40px;
+  background-color: #e02c6d;
+}
+.highlight-text a i {
+  margin-left: 10px;
+}
+
+.highlight-right {
+  padding-top: 30px;
+}
+.highlight-right img {
+  width: 100%;
+  height: 100%;
+}
+/*---------------------- Blogs css ----------------------*/
+.blog-title {
+  padding: 20px 0;
+}
+.blog-title h2 {
+  font-size: 2rem;
+  position: relative;
+  padding-left: 20px;
+}
+.blog-title h2 span {
+  color: #b60445;
+}
+.blog-title h2::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 40px;
+  background-color: red;
+  top: 0;
+  left: 0;
+}
+
+.singel-blog article h4 {
+  color: #60646a;
+  padding-top: 15px;
+}
+.singel-blog article h3 {
+  padding: 5px 0;
+  color: #444;
+  transition: 0.2s;
+}
+.singel-blog article h3:hover {
+  color: #b60445;
+}
+.singel-blog article p {
+  padding: 15px 0;
+  line-height: 25px;
+  font-size: 1rem;
+  text-align: justify;
+  padding-right: 15px;
+}
+.singel-blog article a {
+  color: #e02c6d;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+/*---------------------- Top Footballer css ----------------------*/
+.top-footballer-full-area {
+  margin: 100px 0;
+}
+
+.top-footballer-area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.top-singel-footballer {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #dddddd;
+  box-shadow: 3px 3px 15px 5px #ddd;
+}
+.img-area {
+  overflow: hidden;
+  position: relative;
+  cursor: zoom-in;
+}
+
+.img-area img {
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.img-area:hover img {
+  transform: scale(1.5);
+}
+.img-area .overly {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  bottom: 0%;
+  background-color: rgb(0, 8, 3);
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.img-area:hover .overly {
+  top: 0%;
+}
+.img-area .overly h3 {
+  color: #dddddd;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: rgb(253, 250, 250);
+  letter-spacing: 0.3rem;
+  font-weight: 100;
+}
+.socail-media {
+  padding: 10px 0;
+}
+.socail-media h3 {
+  color: #0e0d0d;
+  font-weight: 400;
+}
+.socail-media i {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  transition: 0.5s;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.socail-media i:hover {
+  background-color: #dddddd;
+  color: black;
+}
+/*---------------------- Subscribe css ----------------------*/
+.subscribe-area {
+  text-align: center;
+}
+.subscribe-area h2 {
+  padding: 20px 0;
+  font-size: 2rem;
+}
+.sbuscribe-input input {
+  max-width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+.sbuscribe-input input:focus {
+  outline: none;
+}
+.sbuscribe-input input:first-child {
+  width: 300px;
+}
+
+.sbuscribe-input input:last-child {
+  cursor: pointer;
+  background-color: #b60445;
+  color: #dddddd;
+}
+
+/*---------------------- Footer css ----------------------*/
+.footer-area {
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-logo img {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+.socail-icon i {
+  width: 40px;
+  height: 40px;
+  background-color: #e8e7e7;
+  border-radius: 50%;
+  line-height: 40px;
+  font-size: 20px;
+  margin: 5px;
+  color: #444;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.socail-icon i:hover {
+  background-color: black;
+  color: #dddddd;
+}
+.fopyright-text p {
+  padding: 15px 0;
+}
+
+/*------ Media query for Tablate css /*------*/
+
+@media only screen and (max-width: 992px) {
+  #toogle-menu:checked ~ ul {
+    right: 0;
+  }
+  .checkbtn {
+    display: block;
+    margin-left: 15px;
+  }
+  .checkbtn .fas {
+    margin: -30px;
+  }
+  .menubar nav ul {
+    width: 100%;
+    height: 100vh;
+    background-color: #09090f;
+    position: fixed;
+    top: 100px;
+    right: 100%;
+    z-index: 9999;
+    display: block;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+  .menubar nav ul li a {
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+  .bottom-deader {
+    display: block;
+    padding-top: 0px;
+  }
+
+  .right-side img {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight-left {
+    margin-bottom: 30px;
+  }
+  .highlight-text h2 {
+    font-size: 2rem;
+  }
+
+  .singel-blog {
+    max-width: 100%;
+  }
+  .singel-blog article p {
+    line-height: 20px;
+    padding: 5px 0;
+  }
+
+  .singel-blog img {
+    max-height: 250px;
+  }
+  .singel-blog {
+    width: 100%;
+    margin-right: 0;
+  }
+  .top-footballer-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*------ Media query for mobile css /*------*/
+
+@media only screen and (max-width: 576px) {
+  .toogle-menu:checked ~ .menubar nav ul {
+    display: block;
+  }
+
+  .bottom-header {
+    display: block;
+    padding-top: 0px;
+  }
+  .highlight-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .bottom-header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-inner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blogs-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .singel-footbaler {
+    margin: 0 auto;
+  }
+  .singel-blog {
+    max-width: 100%;
+    display: block;
+  }
+
+  .singel-blog article {
+    margin-left: 0px;
+  }
+
+  .singel-blog img {
+    width: 100%;
+    max-height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .top-footballer-area {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
